@@ -10,7 +10,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath,
-  assetPrefix: isProd ? `/${repoName}/` : undefined,
+  assetPrefix: basePath || undefined,
 };
 
 export default nextConfig;
