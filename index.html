@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaheer Hussain | Futuristic Gaming Portfolio</title>
+    <meta
+      name="description"
+      content="Zaheer Hussain - B.Tech CSE (DevOps) student portfolio featuring full-stack projects, internships, skills, and futuristic interactive UI."
+    />
+    <meta name="theme-color" content="#0a1228" />
+    <meta property="og:title" content="Zaheer Hussain | Futuristic Gaming Portfolio" />
+    <meta
+      property="og:description"
+      content="Interactive gaming-themed portfolio with projects, experience, education, and contact details."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zaheer-hussain.github.io/My-Portfolio/" />
+    <meta property="og:image" content="https://zaheer-hussain.github.io/My-Portfolio/og-cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <div class="brand">ZH<span class="brand-accent">.dev</span></div>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+        <span aria-hidden="true">🌗</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero reveal" id="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Futuristic • Gaming Themed • Interactive</p>
+          <h1>Zaheer Hussain</h1>
+          <p class="subtitle">
+            B.Tech CSE (DevOps) student building secure, intelligent and scalable software with a
+            love for full-stack development, AI/ML, and cybersecurity.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">Explore Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+            <a class="btn ghost" href="#" aria-label="Resume download link placeholder">Resume</a>
+          </div>
+          <p class="tiny-note">
+            TODO: Replace Resume button target with hosted PDF URL (for example <code>/resume.pdf</code>) once available.
+          </p>
+        </div>
+        <div class="hero-3d tilt" data-tilt>
+          <div class="cube-layer layer-a"></div>
+          <div class="cube-layer layer-b"></div>
+          <div class="cube-layer layer-c"></div>
+          <p class="hud">DevOps Command Center</p>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="about">
+        <h2>About</h2>
+        <p>
+          I’m an enthusiastic third-year Computer Science student at Presidency University (CGPA
+          8.52/10), focused on practical software engineering through team projects and internships.
+          I enjoy combining full-stack engineering with DevOps practices to ship reliable products,
+          and I’m deeply interested in AI/ML + cybersecurity.
+        </p>
+        <ul class="stats">
+          <li><strong>Location:</strong> Bangalore, Karnataka</li>
+          <li><strong>Expected Graduation:</strong> May 2027</li>
+          <li><strong>Core Focus:</strong> Full-Stack + DevOps + Secure Systems</li>
+        </ul>
+      </section>
+
+      <section class="panel reveal" id="skills">
+        <h2>Skills</h2>
+        <div class="chips">
+          <span>Java</span><span>Python</span><span>C++</span><span>JavaScript</span>
+          <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+          <span>HTML</span><span>CSS</span><span>Git</span><span>GitHub</span>
+          <span>VS Code</span><span>Linux</span><span>Arduino IDE</span><span>DevOps</span>
+          <span>OOP</span><span>Data Structures</span>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="projects">
+        <h2>Projects</h2>
+        <p class="tiny-note">
+          TODO: Add direct demo/repository links for resume-specific projects once the canonical GitHub repos are confirmed.
+        </p>
+        <div class="grid cards">
+          <article class="card tilt" data-tilt>
+            <h3>Excel Analytics Platform <small>(Team)</small></h3>
+            <p>
+              Full-stack web app to upload spreadsheet data and generate interactive real-time
+              visualizations.
+            </p>
+            <ul>
+              <li>Built React dashboard components and integrated chart rendering workflows.</li>
+              <li>Implemented Node.js + Express APIs for data ingestion and transformation.</li>
+              <li>Connected MongoDB Atlas to persist uploads and user visualization states.</li>
+              <li>Collaborated via Git/GitHub pull requests to reduce merge conflicts and speed delivery.</li>
+            </ul>
+            <p class="tech">React • Node.js • Express • MongoDB Atlas • GitHub</p>
+          </article>
+
+          <article class="card tilt" data-tilt>
+            <h3>Arduino Bluetooth Control Car <small>(Team)</small></h3>
+            <p>
+              Smartphone-controlled robotic car using Arduino Uno and HC-05 for wireless movement.
+            </p>
+            <ul>
+              <li>Integrated Bluetooth command mapping for directional movement controls.</li>
+              <li>Added front/back LED indicators to improve signaling and low-light visibility.</li>
+              <li>Calibrated motor control logic for smoother turns and reliable response.</li>
+              <li>Participated in hardware-software debugging to stabilize real-time operation.</li>
+            </ul>
+            <p class="tech">Embedded C/C++ • Arduino IDE • HC-05 Bluetooth</p>
+          </article>
+
+          <article class="card tilt" data-tilt>
+            <h3>Java CI Workflow Labs</h3>
+            <p>
+              GitHub-based CI experiments to automate Java compile-and-run checks using GitHub
+              Actions.
+            </p>
+            <ul>
+              <li>Created Java CI pipelines with JDK 17 setup and automated build steps.</li>
+              <li>Automated code checks for sample programs in dedicated lab repositories.</li>
+              <li>Practiced DevOps fundamentals around workflow triggers on push/pull requests.</li>
+            </ul>
+            <p class="tech">GitHub Actions • Java • CI/CD</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article>
+            <h3>Web Development Intern — Zidio Development (Remote)</h3>
+            <p class="muted">June 2025 – July 2025</p>
+            <ul>
+              <li>Contributed to team web application development tasks.</li>
+              <li>Used Git for version control and collaborated through shared code workflows.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Java Programming Intern — Interpe (Remote)</h3>
+            <p class="muted">August 2024 – September 2024</p>
+            <ul>
+              <li>Built classic games (Tic-Tac-Toe and Connect 4 Dots) to strengthen Java fundamentals.</li>
+              <li>Applied OOP and problem-solving practices in a structured internship setting.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+          <article>
+            <h3>Presidency University — Bangalore</h3>
+            <p>B.Tech in Computer Science and Technology (DevOps)</p>
+            <p class="muted">Expected Graduation: May 2027 • CGPA: 8.52/10</p>
+          </article>
+          <article>
+            <h3>Reva PU College — Bangalore</h3>
+            <p class="muted">12th Grade / PUC • 87%</p>
+          </article>
+          <article>
+            <h3>St. Michael’s High School — Bangalore</h3>
+            <p class="muted">10th Grade / Matriculation • 84%</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="links">
+        <h2>GitHub & Links</h2>
+        <div class="link-row">
+          <a href="https://github.com/Zaheer-hussain" target="_blank" rel="noreferrer">GitHub Profile</a>
+          <a href="https://www.linkedin.com/in/zaheer-hussain-468328306" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/Zaheer-hussain/Github-Actions" target="_blank" rel="noreferrer">GitHub Actions Lab</a>
+          <a href="https://github.com/Zaheer-hussain/Github-Actions2" target="_blank" rel="noreferrer">GitHub Actions 2</a>
+        </div>
+      </section>
+
+      <section class="panel reveal" id="certifications">
+        <h2>Certifications & Achievements</h2>
+        <ul>
+          <li>HackerRank — Java (Basic) Certificate</li>
+          <li>HackerRank — Python (Basic) Certificate</li>
+          <li>Strong academic performance with 8.52/10 CGPA in B.Tech CSE (DevOps).</li>
+        </ul>
+      </section>
+
+      <section class="panel reveal" id="contact">
+        <h2>Contact</h2>
+        <p>Let’s build something secure, smart, and impactful together.</p>
+        <p>
+          <a class="email-link" href="mailto:zaheerhussain9620@gmail.com">zaheerhussain9620@gmail.com</a>
+        </p>
+        <p class="tiny-note">
+          Contact is intentionally email-only.
+          TODO: Confirm preferred professional title (e.g., Full-Stack Developer / DevOps Engineer) for future updates.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Zaheer Hussain • Built with futuristic gaming vibes.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
